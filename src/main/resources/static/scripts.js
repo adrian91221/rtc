@@ -60,6 +60,7 @@ function onMessageReceived(payload) {
 }
 
 function addMessage(messageData) {
+    const isScrolledToBottom = messagesContainer.scrollHeight - messagesContainer.clientHeight <= messagesContainer.scrollTop + 1;
     if (messageData.type === 'CHAT') {
         let newMessageContainer = document.createElement('div');
         newMessageContainer.className = 'message-container'
@@ -84,6 +85,9 @@ function addMessage(messageData) {
         newMessageContainer.appendChild(message);
 
         messagesContainer.appendChild(newMessageContainer);
+    }
+    if (isScrolledToBottom) {
+        messagesContainer.scrollTop = messagesContainer.scrollHeight;
     }
 }
 
