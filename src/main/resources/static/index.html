@@ -6,11 +6,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="messages">
-<!--    <div class="message">mes1</div>-->
-<!--    <div class="message">mes2</div>-->
+<div id="username-bar">
+    <form id="usernameForm">
+        <input id="input-username" type="text" placeholder="Enter username...">
+        <button type="submit" id="send-username-btn">Send</button>
+    </form>
 </div>
-<div id="new-msg-bar">
+<div id="messages" class="hidden">
+    <!--    <div class="message-container">-->
+    <!--        <div class="sender"></div>-->
+    <!--        <div class="date"></div>-->
+    <!--        <div class="message">mes1</div>-->
+    <!--    </div>-->
+    <!--    <div class="message-container">-->
+    <!--        <div class="sender"></div>-->
+    <!--        <div class="date"></div>-->
+    <!--        <div class="message">mes2</div>-->
+    <!--    </div>-->
+</div>
+<div id="new-msg-bar" class="hidden">
     <form id="messageForm">
         <input id="input-msg" type="text" placeholder="Type a message">
         <button type="submit" id="send-msg-btn"><img src="send.svg" alt="Send message"/></button>
