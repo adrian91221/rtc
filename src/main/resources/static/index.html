@@ -12,23 +12,31 @@
         <button type="submit" id="send-username-btn">Send</button>
     </form>
 </div>
-<div id="messages" class="hidden">
-    <!--    <div class="message-container">-->
-    <!--        <div class="sender"></div>-->
-    <!--        <div class="date"></div>-->
-    <!--        <div class="message">mes1</div>-->
-    <!--    </div>-->
-    <!--    <div class="message-container">-->
-    <!--        <div class="sender"></div>-->
-    <!--        <div class="date"></div>-->
-    <!--        <div class="message">mes2</div>-->
-    <!--    </div>-->
-</div>
-<div id="new-msg-bar" class="hidden">
-    <form id="messageForm">
-        <input id="input-msg" type="text" placeholder="Type a message">
-        <button type="submit" id="send-msg-btn"><img src="send.svg" alt="Send message"/></button>
-    </form>
+<div id="main-container" class="hidden">
+    <div id="users">
+        <!--        <div class="user">user1<hr class="users-divider"></div>-->
+        <!--        <div class="user">user2<hr class="users-divider"></div>-->
+    </div>
+    <div id="messaging-container">
+        <div id="messages">
+            <!--    <div class="message-container">-->
+            <!--        <div class="sender"></div>-->
+            <!--        <div class="date"></div>-->
+            <!--        <div class="message">mes1</div>-->
+            <!--    </div>-->
+            <!--    <div class="message-container">-->
+            <!--        <div class="sender"></div>-->
+            <!--        <div class="date"></div>-->
+            <!--        <div class="message">mes2</div>-->
+            <!--    </div>-->
+        </div>
+        <div id="new-msg-bar">
+            <form id="messageForm">
+                <input id="input-msg" type="text" placeholder="Type a message">
+                <button type="submit" id="send-msg-btn"><img src="send.svg" alt="Send message"/></button>
+            </form>
+        </div>
+    </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.5.0/sockjs.js"></script>

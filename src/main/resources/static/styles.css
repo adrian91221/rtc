@@ -1,3 +1,23 @@
+.hidden {
+    display: none !important;
+}
+
+#main-container {
+    display: flex;
+}
+
+#users {
+    flex: 0 1 25%;
+    overflow-y: auto;
+    max-height: 100vh;
+    border: 0.2vmin solid #ddd;
+    padding: 2vmin;
+}
+
+#messaging-container {
+    flex: 1;
+}
+
 #messages {
     max-height: 70vh;
     overflow-y: auto;
@@ -13,7 +33,6 @@
     padding: 2vmin;
     position: relative;
 }
-
 
 .message-container .sender {
     flex: 1;
@@ -31,26 +50,15 @@
 }
 
 .message-container .message {
-    /*max-width: 80vw;*/
-    /*margin: 0 auto 2vmin;*/
-    /*padding: 2vmin;*/
-    /*position: relative;*/
     flex-basis: 100%;
     font-size: 100%;
 }
 
-
-.message-container .message .messages-divider {
+.users-divider, .messages-divider {
     border: none;
     height: 1px;
-    background-color : #dcdcdc;
+    background-color: #dcdcdc;
 }
-
-
-.hidden {
-    display: none !important;
-}
-
 
 #new-msg-bar {
     display: flex;
@@ -90,7 +98,7 @@
     justify-content: center;
 }
 
-#send-msg-btn img{
+#send-msg-btn img {
     width: 3vh;
     height: 3vh;
     object-fit: cover;
